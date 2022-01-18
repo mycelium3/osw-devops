@@ -48,13 +48,13 @@ gitfs_remotes:
       - base: master
     - https://github.com/saltstack-formulas/logrotate-formula.git:
       - base: master
-    - https://github.com/opensourcewebsite-org/osw-devops.git:
+    - https://github.com/mycelium3/osw-devops.git:
       - root: salt
       - base: master
 
 ext_pillar:
   - git:
-    - https://github.com/opensourcewebsite-org/osw-devops.git:
+    - https://github.com/mycelium3/osw-devops.git:
       - root: pillar
 
 git_pillar_env: "base"
@@ -95,5 +95,5 @@ openssl req -batch -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/letsencr
 openssl req -batch -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/nginx.pem -out /etc/nginx/nginx.pem
 
 # Copy a file with user-passwords
-wget -L https://raw.githubusercontent.com/opensourcewebsite-org/osw-devops/master/pillar/users/user-passwords.txt.dist
+wget -L https://raw.githubusercontent.com/mycelium3/osw-devops/master/pillar/users/user-passwords.txt.dist
 mv user-passwords.txt.dist /srv/user-passwords.txt
