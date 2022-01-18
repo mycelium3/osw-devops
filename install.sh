@@ -50,7 +50,7 @@ gitfs_remotes:
       - base: master
     - https://github.com/mycelium3/osw-devops.git:
       - root: salt
-      - base: master
+      - base: test_18.04
 
 ext_pillar:
   - git:
