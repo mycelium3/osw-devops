@@ -56,6 +56,7 @@ ext_pillar:
   - git:
     - https://github.com/mycelium3/osw-devops.git:
       - root: pillar
+      - base: test_18.04
 
 git_pillar_env: "base"
 
